@@ -4,7 +4,7 @@
 
 This project is an implementation of a curved lane auto-detection pipeline for self-driving car applications. It is divided in 3 Jupyter Notebooks for our different experiments and axes of research.
 
-[![screenshot](https://raw.githubusercontent.com/fuegoio/lane-detection/master/screenshot.png)](https://raw.githubusercontent.com/fuegoio/lane-detection/master/screenshot.png)
+[![pipeline](https://raw.githubusercontent.com/fuegoio/lane-detection/master/assets/pipeline.png)](https://raw.githubusercontent.com/fuegoio/lane-detection/master/assets/pipeline.png)
 
 ## Organization of the projet
 
@@ -37,6 +37,10 @@ We then tried to see the different impact of those changes on the lane detection
 In this notebook, we focused on a new approach we created to enhance the perspective warp. As this warp is taking 4 points to project the road in a aerial point-of-view, we tried to optimize the 2 upper points of the trapezis to have a better view for the lane detection.
 
 We tried to implement a Hough line detection on the raw image (with a edge filtering of course) to determine roughly where the lines could be. We then take a margin on both sides of those lines and take the intersection between our horizon (`30%` of the image height) and this zone.
+
+[![hough](https://raw.githubusercontent.com/fuegoio/lane-detection/master/assets/hough.png)](https://raw.githubusercontent.com/fuegoio/lane-detection/master/assets/hough.png)
+
+[![perspective](https://raw.githubusercontent.com/fuegoio/lane-detection/master/assets/perspective.png)](https://raw.githubusercontent.com/fuegoio/lane-detection/master/assets/perspective.png)
  
 ## Setting up the project
 

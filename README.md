@@ -28,7 +28,7 @@ As the lane detection is very dependant from the edge detection, we researched a
 Especially, we introduced :
 
 * Sobel HLS edge detection vs Canny detection
-* No blur vs Gaussian blur
+* No blur vs basic blur
 
 We then tried to see the different impact of those changes on the lane detection and the final result.
 
